@@ -14,16 +14,16 @@
 
     <main>
         <fieldset>
-        <legend>Buscador</legend>
-        <form action=""> <!--poner enlace para la pagina con el mensaje-->
-                <label for="fname">Descripción</label>
-                <br><input type = "texto" id = "fname" id = "fname" required> <br>
+        <legend><h3>Buscador</h3></legend>
+        <form action="../mensajes/mensajeBuscador.html"> <!--poner enlace para la pagina con el mensaje-->
+                <label for="fname"><h4>Descripción</h4></label>
+                <input type = "texto" id = "fname" id = "fname" required> 
             
-                <label for="fname">Causas</label>
-                <br><input type = "texto" id = "fname" id = "fname"> <br>              
+                <label for="fname"><h4>Causas</h4></label>
+                <input type = "texto" id = "fname" id = "fname">              
         
 
-            <h3>Síntomas</h3>
+            <h4>Síntomas</h4>
                      
                 <label for="sintomas">Selecciona los síntomas:</label>
                 <select name="sintomas" id="sintomas" size="6" multiple>
@@ -33,10 +33,11 @@
                     <option value="PérdidaApetito">Pérdida de apetito</option>
                     <option value="SudoresNocturnos">Sudores nocturnos</option>
                     <option value="MalestarGeneral">Malestar general</option>
-                    <p>Mantenga presionada la tecla Ctrl(Windows) / Comando (Mac) para seleccionar varias opciones</p>
-                </select>
+                    </select>
 
-            <h3>Pruebas y exámenes</h3>
+            <p>Mantenga presionada la tecla Ctrl(Windows) / Comando (Mac) para seleccionar varias opciones</p>
+
+            <h4>Pruebas y exámenes</h4>
                 <p>Lista de pruebas y exámenes</p>
                      
                 <label for="sintomas">Selecciona las pruebas o síntomas de interés:</label>
@@ -47,13 +48,14 @@
                     <option value="tomografia">Tomografía</option>
                     <option value="ultrasonido">Ultrasonido</option>
                     <option value="epirometria">Epirometría</option>
-                    <p>Mantenga presionada la tecla Ctrl(Windows) / Comando (Mac) para seleccionar varias opciones</p>
-                </select>
+                    </select><br>
+            <p>Mantenga presionada la tecla Ctrl(Windows) / Comando (Mac) para seleccionar varias opciones</p>
+                
             
-            <label for="fname">Tratamiento</label>
-                <br><input type = "texto" id = "fname" id = "fname"> <br>
+            <label for="fname"><h4>Tratamiento</h4></label>
+                <input type = "texto" id = "fname" id = "fname">
 
-            <h3>Expectativas</h3>
+            <h4>Expectativas</h4>
                 <p>Qué expectativas tiene de la búsqueda:</p>
                     <input type="radio" id="negativas" name="expectativas" value="Negativas">
                     <label for="negativas">Negativas</label><br>
