@@ -15,10 +15,10 @@
         <form action="../mensajes/mensajeContacto.html">
             <fieldset>
                 <legend>Rellene el formulario</legend>
-            <label for="asunto">Asunto</label>
+            <label for="asunto">Asunto <small>(<strong>Obligatorio</strong>)</small></label>
             <input type="text" id="asunto" name="asunto" required><br>
-            <label for="comentario">Comentario</label>
-            <textarea name="comentario" id="comentario" required>Introduzca aqui su mensaje</textarea><br>
+            <label for="comentario">Comentario <small>(<strong>Obligatorio</strong>)</small></label>
+            <textarea name="comentario" id="comentario" placeholder="Introduzca aqui su mensaje" minlength="10" required></textarea><br>
             <label for="soy">Yo soy:</label>
             <select name="soy" id="soy">
                 <option value="medico">Medico</option>
@@ -50,6 +50,9 @@
             <input type="reset" value="Reestablecer">
             <input type="submit" value="Enviar">
         </form>
+        <nav>
+            <a href="../index.html">Pagina principal</a>    
+        </nav>
     </main>
     <footer>
         <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>

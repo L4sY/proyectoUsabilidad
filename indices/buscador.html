@@ -16,15 +16,13 @@
         <fieldset>
         <legend><h2>Buscador</h2></legend>
         <form action="../mensajes/mensajeBuscador.html"> <!--poner enlace para la pagina con el mensaje-->
-                <label for="fname"><h3>Descripcion</h3></label>
-                <input type = "text" id = "fname" id = "fname" required> 
+                <label for="fname">Descripcion<small>(<strong>Obligatorio</strong>)</small></label>
+                <input type = "text" id = "fname" id = "fname" required><br>
             
-                <label for="fname"><h3>Causas</h3></label>
-                <input type = "text" id = "fname" id = "fname">              
-        
-
-            <h3>Síntomas</h3>
-                     
+                <label for="fname">Causas</label>
+                <input type = "text" id = "fname" id = "fname">
+                <br>              
+          
                 <label for="sintomas">Selecciona los síntomas:</label>
                 <select name="sintomas" id="sintomas" size="6" multiple>
                     <option value="Fiebre">Fiebre</option>
@@ -36,9 +34,6 @@
                     </select>
 
             <p>Mantenga presionada la tecla <kbd>Ctrl</kbd> (Windows) / <kbd>Cmd</kbd> (Mac) para seleccionar varias opciones</p>
-
-            <h3>Pruebas y exámenes</h3>
-                <p>Lista de pruebas y exámenes</p>
                      
                 <label for="sintomas">Selecciona las pruebas o síntomas de interés:</label>
                 <select name="sintomas" id="sintomas" size="6" multiple>
@@ -52,10 +47,9 @@
             <p>Mantenga presionada la tecla <kbd>Ctrl</kbd> (Windows) / <kbd>Cmd</kbd> (Mac) para seleccionar varias opciones</p>
                 
             
-            <label for="fname"><h3>Tratamiento</h3></label>
+            <label for="fname">Tratamiento</label>
                 <input type = "text" id = "fname" id = "fname">
 
-            <h3>Expectativas</h3>
                 <p>Qué expectativas tiene de la búsqueda:</p>
                     <input type="radio" id="negativas" name="expectativas" value="Negativas">
                     <label for="negativas">Negativas</label><br>
