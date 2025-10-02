@@ -16,7 +16,7 @@
         
         <form action="../mensajes/mensajeBuscador.html"> <!--poner enlace para la pagina con el mensaje-->
         <fieldset>
-        <legend><h2>Buscador</h2></legend>
+        <legend>Datos de busqueda</legend>
                 <label for="descripcion">Descripcion<small>(<strong>Obligatorio</strong>)</small></label>
                 <input type = "text"  id = "descripcion" required><br>
             
@@ -24,7 +24,7 @@
                 <input type = "text" id = "causas"><br>
                               
           
-                <label for="sintomas">Selecciona los síntomas:</label>
+                <label for="sintomas">Selecciona los síntomas:</label><br>
                 <select name="sintomas" id="sintomas" size="6" multiple>
                     <option value="Fiebre">Fiebre</option>
                     <option value="Escalofríos">Escalofríos</option>
@@ -36,7 +36,7 @@
 
             <p>Mantenga presionada la tecla <kbd>Ctrl</kbd> (Windows) / <kbd>Cmd</kbd> (Mac) para seleccionar varias opciones</p>
                      
-                <label for="sintomas">Selecciona las pruebas o síntomas de interés:</label>
+                <label for="sintomas">Selecciona las pruebas o síntomas de interés:</label><br>
                 <select name="sintomas" id="sints" size="6" multiple>
                     <option value="analisis">Análisis de sangre</option>
                     <option value="ecografia">Ecografía</option>
@@ -46,21 +46,21 @@
                     <option value="epirometria">Epirometría</option>
                     </select><br>
             <p>Mantenga presionada la tecla <kbd>Ctrl</kbd> (Windows) / <kbd>Cmd</kbd> (Mac) para seleccionar varias opciones</p>
+        
                 
             
             <label for="tratamiento">Tratamiento</label>
                 <input type = "text" id = "tratamiento">
-
-                <p>Qué expectativas tiene de la búsqueda:</p>
-                    <input type="radio" id="negativas" name="expectativas" value="Negativas">
-                    <label for="negativas">Negativas</label><br>
-                    <input type="radio" id="sindefinir" name="expectativas" value="Sin definir">
-                    <label for="sindefinir">Sin definir</label><br>
-                    <input type="radio" id="positivas" name="expectativas" value="Positivas">
-                    <label for="positivas">Positivas</label><br>
-
-            
         </fieldset>
+                <fieldset>
+                    <legend>Marque sus expectativas</legend>
+                        <input type="radio" id="negativas" name="expectativas" value="Negativas">
+                        <label for="negativas">Negativas</label><br>
+                        <input type="radio" id="sindefinir" name="expectativas" value="Sin definir">
+                        <label for="sindefinir">Sin definir</label><br>
+                        <input type="radio" id="positivas" name="expectativas" value="Positivas">
+                        <label for="positivas">Positivas</label><br>
+                </fieldset>
 
         <input type="submit" value="Entregar" > 
         <input type="reset" value="Reestablecer">

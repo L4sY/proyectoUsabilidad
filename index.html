@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedSearch - Inicio</title>
+    <style>
+        table, tr, th, td {
+        border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,9 +16,9 @@
         <q>El arte de curar a su alcance</q><br>
     </header>
 
-    <section>
+    <nav>
         <a href="indices/buscador.html">Buscador</a>
-    </section>
+    </nav>
 
     <main>
         <h2>Guia de articulos clinicos</h2>
@@ -52,7 +57,35 @@
         <h3>Enfermedades neurodegenerativas</h3>
         <p>Una sintesis de los articulos de MedSearch mas importantes en el campo de la neurociencia </p>
         <a href="articulos/articuloELAresumen.html">ELA</a><br><br>
+        <a href="indices/puntuar.html">Puntua un articulo</a>
         <a href="indices/contacto.html">Contacto</a>
+    </section>
+    <section>
+        <h2>Articulos mejor valorados</h2>
+        <table>
+            <caption>Articulos mejor valorados</caption>
+
+            <tr>
+                <th scope="col">Articulo</th>
+                <th scope="col">Puntuacion (1-5)</th>
+            </tr>
+            <tr>
+                <td>ELA</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>Alzheimer</td>
+                <td>4.1</td>
+            </tr>
+            <tr>
+                <td>Encefalocele</td>
+                <td>3.5</td>
+            </tr>
+            <tr>
+                <td>Artrosis</td>
+                <td>3</td>
+            </tr>
+        </table>
     </section>
     <footer>
         <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>

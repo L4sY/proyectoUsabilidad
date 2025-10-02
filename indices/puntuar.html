@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSearch</title>
+    <!--Reestablecer barra de progreso con el boton -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #eee;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            height: 25px;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background-color: #4caf50;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            line-height: 25px;
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MedSearch</h1>
+        <q>El arte de curar a su alcance</q>
+    </header>
+    <main>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">0%</div>
+        </div>
+        <form action="../mensajes/mensajePuntuar.html" id="puntuarForm">
+            <fieldset>
+                <legend>Informacion personal</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre aqui" required><br>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required><br>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" pattern="^[^@\s]+@[^@\s]+\.+[^@\s]{2,}$" required><small>Ej. email@gmail.es</small>
+                <label for="tlf">Telefono</label>
+                <input type="tel" id="tlf" name="tlf" pattern="^[0-9]{9}" required maxlength="9"><small>Ej. 672189259</small><br>
+                <label for="nac">Fecha de nacimiento</label>
+                <input type="date" id="nac" name="nac" required>
+            </fieldset>
+            <fieldset>
+                <label for="numArt">Numero de articulos leidos</label>
+                <input type="number" id="numArt" name="numArt" min="5" max="999" required><br>
+                <label for="art">Articulo que quiere puntuar</label>
+                <input type="text" id="art" name="art" required><br>
+                <label for="punt">Puntuacion</label>
+                <input type="range" id="punt" name="punt" min="0" max="10" value="4" step="2" style="accent-color: #4caf50">
+                <span id="valorPuntuacion">4</span><br><br>
+
+                <!-- Nuevo: selector de color y botón -->
+                <label for="colorInput">Elige un color para las barras:</label>
+                <input type="color" id="colorInput" value="#4caf50">
+                <button type="button" id="cambiarColor">Cambiar color</button>
+            </fieldset>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Reestablecer">
+        </form>
+    </main>
+    <footer>
+        <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>
+        <p>Curso 2025-2026</p>
+        <p>Ingenieria Biomedica</p>
+    </footer>
+    <script>
+        const fechaInput = document.getElementById("nac");
+        const hoy = new Date().toISOString().split("T")[0];
+        fechaInput.setAttribute("max", hoy);
+
+        const formulario = document.getElementById("puntuarForm");
+        const progressBar = document.getElementById("progressBar");
+
+        formulario.addEventListener("input", actualizarProgreso);
+
+        function actualizarProgreso() {
+            const campos = formulario.querySelectorAll("[required]");
+            let completados = 0;
+
+            campos.forEach(campo => {
+                if (campo.type === "checkbox" || campo.type === "radio") {
+                    if (campo.checked) completados++;
+                } else if (campo.value.trim() !== "") {
+                    completados++;
+                }
+            });
+
+            const progreso = Math.round((completados / campos.length) * 100);
+            progressBar.style.width = progreso + "%";
+            progressBar.textContent = progreso + "%";
+        }
+
+        const slider = document.getElementById("punt");
+        const output = document.getElementById("valorPuntuacion");
+
+        output.textContent = slider.value;
+
+        slider.addEventListener("input", () => {
+            output.textContent = slider.value;
+        });
+
+        // Cambio de color
+        const botonColor = document.getElementById("cambiarColor");
+        const colorInput = document.getElementById("colorInput");
+
+        botonColor.addEventListener("click", () => {
+            const color = colorInput.value;
+            progressBar.style.backgroundColor = color;
+            slider.style.accentColor = color; // cambia el color del range (soporte moderno)
+        });
+    </script>
+</body>
+</html>
