@@ -25,10 +25,20 @@
         <fieldset>
         <legend>Datos de busqueda</legend>
                 <label for="descripcion">Descripcion<small>(<strong>Obligatorio</strong>)</small></label>
-                <input type = "text"  id = "descripcion" required><br>
+                <input type = "text"  id = "descripcion" required>
+                <select name="condicion" id="condicion">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                    <option value="Sin">Sin</option>
+                </select><br>
             
                 <label for="causas">Causas</label>
-                <input type = "text" id = "causas"><br>
+                <input type = "text" id = "causas">
+                <select name="condicion" id="condicion">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                    <option value="Sin">Sin</option>
+                </select><br>
                               
           
                 <label for="sintomas">Selecciona los síntomas:</label><br>
@@ -39,7 +49,13 @@
                     <option value="PérdidaApetito">Pérdida de apetito</option>
                     <option value="SudoresNocturnos">Sudores nocturnos</option>
                     <option value="MalestarGeneral">Malestar general</option>
-                    </select>
+                </select>
+
+                <select name="condicion" id="condicion">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                    <option value="Sin">Sin</option>
+                </select>
 
             <p>Mantenga presionada la tecla <kbd>Ctrl</kbd> (Windows) / <kbd>Cmd</kbd> (Mac) para seleccionar varias opciones</p>
                      
@@ -51,7 +67,12 @@
                     <option value="tomografia">Tomografía</option>
                     <option value="ultrasonido">Ultrasonido</option>
                     <option value="epirometria">Epirometría</option>
-                    </select><br>
+                </select>
+                <select name="condicion" id="condicion">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                    <option value="Sin">Sin</option>
+                </select><br>
             <p>Mantenga presionada la tecla <kbd>Ctrl</kbd> (Windows) / <kbd>Cmd</kbd> (Mac) para seleccionar varias opciones</p>
         
                 
