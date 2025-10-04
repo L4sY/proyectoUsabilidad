@@ -16,12 +16,17 @@
         <q>El arte de curar a su alcance</q><br>
     </header>
 
-    <nav>
-        <a href="indices/buscador.html">Buscador</a>
+    <nav aria-label="Migas de pan">
+        <ol>
+            <li aria-current="page">Inicio</li>
+        </ol>
     </nav>
 
     <main>
         <h2>Guia de articulos clinicos</h2>
+            <nav>
+                <a href="indices/buscador.html">Buscador</a>
+            </nav>
         <p>En esta seccion se podran consultar los articulos clinicos disponibles para cada letra del abecedario</p>
         <nav>
             <a href="indices/a.html">A</a>
@@ -56,7 +61,8 @@
         <h2>Temas destacados</h2> 
         <h3>Enfermedades neurodegenerativas</h3>
         <p>Una sintesis de los articulos de MedSearch mas importantes en el campo de la neurociencia </p>
-        <a href="articulos/articuloELAresumen.html">ELA</a><br><br>
+        <a href="articulos/articuloELAresumen.html">ELA</a><br>
+        <a href="articulos/articuloAlzheimer.html">Alzheimer</a><br><br>
         <a href="indices/puntuar.html">Puntua un articulo</a>
         <a href="indices/contacto.html">Contacto</a>
     </section>
@@ -70,20 +76,22 @@
                 <th scope="col">Puntuacion (1-5)</th>
             </thead>
             <tbody>
-                <td>ELA</td>
-                <td>4.5</td>
-            </tbody>
-            <tbody>
-                <td>Alzheimer</td>
-                <td>4.1</td>
-            </tbody>
-            <tbody>
-                <td>Encefalocele</td>
-                <td>3.5</td>
-            </tbody>
-            <tbody>
-                <td>Artrosis</td>
-                <td>3</td>
+                <tr>
+                    <td>ELA</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>Alzheimer</td>
+                    <td>4.1</td>
+                </tr>
+                <tr>
+                    <td>Encefalocele</td>
+                    <td>3.5</td>
+                </tr>
+                <tr>
+                    <td>Artrosis</td>
+                    <td>3</td>
+                </tr>
             </tbody>
         </table>
     </section>

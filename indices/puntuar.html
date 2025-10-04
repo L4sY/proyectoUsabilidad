@@ -30,15 +30,25 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>MedSearch</h1>
         <q>El arte de curar a su alcance</q>
     </header>
+
+    <nav aria-label="Migas de pan">
+        <ol>
+            <li><a href="../index.html">Inicio</a></li>
+            <li aria-current="page">Puntuar</li>
+        </ol>
+    </nav>
+
     <main>
         <div class="progress-container">
             <div class="progress-bar" id="progressBar">0%</div>
         </div>
         <form action="../mensajes/mensajePuntuar.html" id="puntuarForm">
+
             <fieldset>
                 <legend>Informacion personal</legend>
                 <label for="nombre">Nombre</label>
@@ -52,6 +62,7 @@
                 <label for="nac">Fecha de nacimiento</label>
                 <input type="date" id="nac" name="nac" required>
             </fieldset>
+
             <fieldset>
                 <label for="numArt">Numero de articulos leidos</label>
                 <input type="number" id="numArt" name="numArt" min="5" max="999" required><br>
@@ -70,11 +81,13 @@
             <input type="reset" value="Reestablecer">
         </form>
     </main>
+
     <footer>
         <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>
         <p>Curso 2025-2026</p>
         <p>Ingenieria Biomedica</p>
     </footer>
+
     <script>
         const fechaInput = document.getElementById("nac");
         const hoy = new Date().toISOString().split("T")[0];
@@ -121,5 +134,6 @@
             slider.style.accentColor = color; // cambia el color del range (soporte moderno)
         });
     </script>
+    
 </body>
 </html>
