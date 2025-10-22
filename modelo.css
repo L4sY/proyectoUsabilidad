@@ -62,12 +62,12 @@ th {
 
 /* === FOOTER === */
 footer {
-  background-color: #ffb6c1;  /* rosa suave */
+  background-color: #c57bdd; 
   color: #000;
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
-  border-top: 3px solid #ff99c8; /* línea superior decorativa */
+  border-top: 3px solid #bb77d2; 
   font-size: 0.95rem;
 }
 

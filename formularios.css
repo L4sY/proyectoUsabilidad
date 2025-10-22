@@ -141,5 +141,50 @@ fieldset {
   padding: 15px;
 }
 
+/* === FOOTER === */
+footer {
+  background-color: #c57bdd; 
+  color: #000;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  border-top: 3px solid #bb77d2; 
+  font-size: 0.95rem;
+}
+
+/* Parte superior con los enlaces */
+.footer-top {
+  margin-bottom: 10px;
+}
+
+.footer-top a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-top a:hover {
+  color: #fff; /* cambia a blanco al pasar el ratón */
+}
+
+/* Parte inferior con créditos */
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Diseño responsive */
+@media (max-width: 480px) {
+  .footer-top a {
+    display: block;
+    margin: 6px 0;
+  }
+
+  footer {
+    padding: 25px 10px;
+  }
+}
 
 
