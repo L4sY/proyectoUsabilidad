@@ -15,8 +15,23 @@ body {
     color: black;
     background-color: white;
 }
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-/** MODELO TABLAS **/
+main {
+  padding: 40px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -33,4 +48,3 @@ th {
   background-color: #0078ff;
   color: white;
 }
-

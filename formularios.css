@@ -1,0 +1,86 @@
+/* === ESTILOS GENERALES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+     font-size: 16px;
+     scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;   /* gris claro de fondo */
+  color: #333;                 /* gris oscuro para el texto */
+  line-height: 1.5;
+}
+
+
+/* === CONTENEDOR DEL FORMULARIO === */
+.form-container {
+  max-width: 500px;            /* ancho máximo del formulario */
+  margin: 60px auto;           /* centra el formulario horizontalmente y separa del borde superior */
+  background-color: white;     /* fondo blanco para destacarlo del fondo general */
+  padding: 30px;               /* espacio interno */
+  border-radius: 10px;         /* esquinas redondeadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* === ETIQUETAS (labels) === */
+label {
+  display: block;              /* hace que cada label ocupe toda la línea */
+  margin-bottom: 8px;          /* espacio debajo del texto del label */
+  font-weight: bold;
+}
+
+/* === CAMPOS DEL FORMULARIO === */
+input, textarea, select {
+  width: 100%;                 /* ocupa todo el ancho disponible */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;      /* borde gris claro */
+  border-radius: 5px;          /* esquinas redondeadas */
+  font-size: 1rem;
+  transition: border-color 0.3s ease; /* animación suave al enfocar */
+}
+
+/* === EFECTO AL HACER FOCO (cuando el usuario hace clic) === */
+input:focus, textarea:focus, select:focus {
+  border-color: #0078ff;       /* cambia el color del borde */
+  outline: none;               /* elimina el borde azul del navegador */
+}
+
+/* === BOTÓN === */
+button {
+  display: block;               /* lo convierte en elemento de bloque (permite centrarlo con margin) */
+  margin: 0 auto;               /* lo centra horizontalmente */
+  padding: 8px 20px;            /* alto y ancho del botón */
+  background-color: #0078ff;    /* azul */
+  color: white;                 /* texto blanco */
+  border: none;                 /* sin borde */
+  border-radius: 5px;           /* esquinas redondeadas */
+  font-size: 1rem;              /* tamaño del texto */
+  cursor: pointer;              /* cambia el cursor al pasar */
+  transition: background-color 0.3s ease; /* animación al pasar el ratón */
+  width: auto;                  /* tamaño según el contenido */
+}
+
+button:hover {
+  background-color: #005fcc;   /* azul más oscuro al pasar el ratón */
+}
+
+/* === ADAPTACIÓN A MÓVILES === */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 30px 15px;         /* menos margen lateral en pantallas pequeñas */
+    padding: 20px;
+  }
+}
