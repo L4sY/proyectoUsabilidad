@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;   /* gris claro de fondo */
+  background-color: #f5f5f5;  
   color: rgb(5, 5, 4);
   background-color: rgb(255, 255, 255);
 }
@@ -26,12 +26,12 @@ header {
 
 /* === CONTENEDOR DEL FORMULARIO === */
 .form-container {
-  max-width: 500px;            /* ancho máximo del formulario */
-  margin: 60px auto;           /* centra el formulario horizontalmente y separa del borde superior */
-  background-color: white;     /* fondo blanco para destacarlo del fondo general */
-  padding: 30px;               /* espacio interno */
-  border-radius: 10px;         /* esquinas redondeadas */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+  max-width: 500px;          
+  margin: 60px auto;          
+  background-color: white;     
+  padding: 30px;              
+  border-radius: 10px;      
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h1 {
@@ -42,8 +42,8 @@ header {
 
 /* === ETIQUETAS (labels) === */
 label {
-  display: block;              /* hace que cada label ocupe toda la línea */
-  margin-bottom: 8px;          /* espacio debajo del texto del label */
+  display: block;             
+  margin-bottom: 8px;         
   font-weight: bold;
 }
 
@@ -52,16 +52,16 @@ input, textarea, select {
   width: 100%;                 
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;      /* borde gris claro */
-  border-radius: 5px;          /* esquinas redondeadas */
+  border: 1px solid #ccc;     
+  border-radius: 5px;        
   font-size: 1rem;
-  transition: border-color 0.3s ease; /* animación suave al enfocar */
+  transition: border-color 0.3s ease; 
 }
 
 /* === EFECTO AL HACER FOCO (cuando el usuario hace clic) === */
 input:focus, textarea:focus, select:focus {
-  border-color: #b554d5;       /* cambia el color del borde */
-  outline: none;               /* elimina el borde azul del navegador */
+  border-color: #b554d5;    
+  outline: none;               
 }
 
 /* === BOTÓN === */
@@ -130,6 +130,16 @@ legend {
   border: 2px solid #d49fe6;
   border-radius: 8px;
   padding: 6px 14px;
-  
+  margin-left: 10px; 
   text-align: left;
 }
+
+fieldset {
+  border: 2px solid #d49fe6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+
+
