@@ -49,7 +49,7 @@ label {
 
 /* === CAMPOS DEL FORMULARIO === */
 input, textarea, select {
-  width: 100%;                 /* ocupa todo el ancho disponible */
+  width: 100%;                 
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;      /* borde gris claro */
@@ -60,27 +60,27 @@ input, textarea, select {
 
 /* === EFECTO AL HACER FOCO (cuando el usuario hace clic) === */
 input:focus, textarea:focus, select:focus {
-  border-color: #0078ff;       /* cambia el color del borde */
+  border-color: #b554d5;       /* cambia el color del borde */
   outline: none;               /* elimina el borde azul del navegador */
 }
 
 /* === BOTÓN === */
 button {
-  display: block;               /* lo convierte en elemento de bloque (permite centrarlo con margin) */
-  margin: 0 auto;               /* lo centra horizontalmente */
-  padding: 8px 20px;            /* alto y ancho del botón */
-  background-color: #0078ff;    /* azul */
-  color: white;                 /* texto blanco */
-  border: none;                 /* sin borde */
-  border-radius: 5px;           /* esquinas redondeadas */
-  font-size: 1rem;              /* tamaño del texto */
-  cursor: pointer;              /* cambia el cursor al pasar */
-  transition: background-color 0.3s ease; /* animación al pasar el ratón */
-  width: auto;                  /* tamaño según el contenido */
+  display: block;               
+  margin: 0 auto;               
+  padding: 8px 20px;           
+  background-color: #b554d5;    
+  color: white;               
+  border: none;                
+  border-radius: 5px;           
+  font-size: 1rem;             
+  cursor: pointer;             
+  transition: background-color 0.3s ease; 
+  width: auto;                 
 }
 
 button:hover {
-  background-color: #005fcc;   /* azul más oscuro al pasar el ratón */
+  background-color: #b554d5;   
 }
 
 
@@ -130,6 +130,6 @@ legend {
   border: 2px solid #d49fe6;
   border-radius: 8px;
   padding: 6px 14px;
-  margin-left: 10px; 
+  
   text-align: left;
 }
