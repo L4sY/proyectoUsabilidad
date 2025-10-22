@@ -12,11 +12,11 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: black;
-    background-color: white;
+    color: rgb(5, 5, 4);
+    background-color: rgb(255, 255, 255);
 }
 header {
-  background-color: #222;
+  background-color: #b554d5;
   color: white;
   padding: 20px;
   text-align: center;
@@ -45,6 +45,25 @@ th, td {
 }
 
 th {
-  background-color: #0078ff;
+  background-color: #b554d5;
   color: white;
+}
+/* === ADAPTACIÓN A MÓVILES === */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  .form-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  article img {
+    width: 100%;
+  }
 }
