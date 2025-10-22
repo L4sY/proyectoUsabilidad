@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root{
+  --colorFondo: #b554d5;
+  --bordeFondo: #9426b9;
+}
+
 html {
      font-size: 16px;
      scroll-behavior: smooth;
@@ -16,20 +21,36 @@ body {
     background-color: rgb(255, 255, 255);
 }
 header {
-  background-color: #b554d5;
+  background-color: var(--colorFondo);
   color: white;
   padding: 20px;
   text-align: center;
+  display:flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-bottom: var(--bordeFondo);
+}
+
+section {
+  padding: 40px;
+}
+
+.logo{
+  width: 70px;
+  height: auto;
+}
+
+.columnaTitulo{
+  text-align: left;
+}
+
+q {
+  font-style: italic;
+  quotes: none;
 }
 
 main {
   padding: 40px;
-}
-
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 10px;
 }
 
 table {
@@ -70,12 +91,12 @@ th {
 
 /* === FOOTER === */
 footer {
-  background-color: #c57bdd; 
+  background-color: var(--colorFondo); 
   color: #000;
   text-align: center;
   padding: 20px 10px;
   margin-top: 40px;
-  border-top: 3px solid #bb77d2; 
+  border-top: 3px solid var(--colorFondo); 
   font-size: 0.95rem;
 }
 

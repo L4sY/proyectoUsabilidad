@@ -21,8 +21,16 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+h4{
+    text-decoration: underline;
+}
+
 main{
   padding: 40px;
+}
+
+body p,a,ul{
+    padding-left: 30px;
 }
 
 header {
@@ -30,6 +38,7 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+  border-bottom: var(--bordeFondo);
 }
 
 /** MODELO TABLAS **/

@@ -4,30 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedSearch</title>
-    <!--Reestablecer barra de progreso con el boton -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .progress-container {
-            width: 100%;
-            background-color: #eee;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            height: 25px;
-        }
-        .progress-bar {
-            height: 100%;
-            width: 0;
-            background-color: #4caf50;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            line-height: 25px;
-            transition: width 0.3s ease, background-color 0.3s ease;
-        }
-    </style>
     <script>
         const fechaInput = document.getElementById("nac");
         const hoy = new Date().toISOString().split("T")[0];
@@ -129,12 +105,16 @@
     </main>
 
     <footer>
-        <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>
-        <p>Curso 2025-2026</p>
-        <p>Ingenieria Biomedica</p>
-        <a href="/proyectoUsabilidad/indices/contacto.html">Contacto</a>
-        <a href="/proyectoUsabilidad/indices/puntuar.html">Puntua un articulo</a>
-        <a href="/proyectoUsabilidad/indices/mapaSitio.html">Mapa del sitio</a>
+        <div class="footer-bottom">
+            <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>
+            <p>Curso 2025-2026</p>
+            <p>Ingenieria Biomedica</p>
+        </div>
+        <div class="footer-top">
+            <a href="/proyectoUsabilidad/indices/contacto.html">Contacto</a>
+            <a href="/proyectoUsabilidad/indices/puntuar.html">Puntua un articulo</a>
+            <a href="/proyectoUsabilidad/indices/mapaSitio.html">Mapa del sitio</a>
+        </div>        
     </footer>
 </body>
 </html>
