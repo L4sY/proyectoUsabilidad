@@ -89,6 +89,13 @@ th {
   color: white;
 }
 
+img{
+  align-items: center;
+  width: 350px;
+  height: auto;
+}
+
+
 /* === ADAPTACIÓN A MÓVILES === */
 @media (max-width: 600px) {
   body {
