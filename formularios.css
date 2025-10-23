@@ -6,13 +6,21 @@
 }
 
 :root{
-  --colorFondo: #b554d5;
+  --colorFondo: #8829A8;
   --bordeFondo: #9426b9;
+  --colorPie:#C87CDF;
+  --fondoFocus: #ffb8fa;
 }
 
 html {
      font-size: 16px;
      scroll-behavior: smooth;
+}
+
+:focus{
+  border-color: var(--bordeFondo);
+  background-color:var(--fondoFocus);
+  text-decoration: underline;
 }
 
 body {
@@ -66,7 +74,7 @@ q {
 }
 
 .skip-link{
-  color: aqua;
+  color: #671F7F;
   padding: 0.4rem 0.8rem;
 }
 
@@ -202,6 +210,17 @@ th {
   }
 }
 
+@media (orientation: landscape) {
+  body {
+    font-size: 18px;   
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row; 
+  }
+}
+
 /* === ESTILOS PARA LOS LEGENDS === */
 legend {
   font-weight: bold;
@@ -224,7 +243,7 @@ fieldset {
 
 /* === FOOTER === */
 footer {
-  background-color: var(--colorFondo); 
+  background-color: var(--colorPie); 
   color: #000;
   text-align: center;
   padding: 20px 10px;
@@ -247,7 +266,8 @@ footer {
 }
 
 .footer-top a:hover {
-  color: #fff; /* cambia a blanco al pasar el ratón */
+  color: #fff;
+  text-decoration: underline; 
 }
 
 /* Parte inferior con créditos */
