@@ -34,6 +34,36 @@ header {
   border-bottom: var(--bordeFondo);
 }
 
+.linkSalto{
+  position:absolute;
+  width: 100%;
+  top: -80px;
+  background: #ffbf47;
+  gap: 1rem;
+  pad: 0.6rem 0;
+  z-index: 1000;
+  border:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skip-link{
+  color: aqua;
+  padding: 0.4rem 0.8rem;
+}
+
+.skip-link:focus{
+  outline: 3px solid #000;
+}
+
+.linkSalto:focus-within{
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease;
+  margin: 0;
+}
+
 
 /* === CONTENEDOR DEL FORMULARIO === */
 .form-container {
@@ -71,7 +101,7 @@ input, textarea, select {
 
 /* === EFECTO AL HACER FOCO (cuando el usuario hace clic) === */
 input:focus, textarea:focus, select:focus {
-  border-color: #b554d5;    
+  border-color: var(--colorFondo);    
   outline: none;               
 }
 
