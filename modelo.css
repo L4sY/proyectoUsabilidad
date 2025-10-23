@@ -30,6 +30,24 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+  display:flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-bottom: var(--bordeFondo);
+}
+
+.logo{
+  width: 70px;
+  height: auto;
+}
+
+.columnaTitulo{
+  text-align: left;
+}
+
+q {
+  font-style: italic;
+  quotes: none;
 }
 
 .linkSalto{

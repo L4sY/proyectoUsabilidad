@@ -31,6 +31,20 @@ header {
   border-bottom: var(--bordeFondo);
 }
 
+.logo{
+  width: 70px;
+  height: auto;
+}
+
+.columnaTitulo{
+  text-align: left;
+}
+
+q {
+  font-style: italic;
+  quotes: none;
+}
+
 .linkSalto{
   position:absolute;
   width: 100%;
@@ -63,20 +77,6 @@ header {
 
 section {
   padding: 40px;
-}
-
-.logo{
-  width: 70px;
-  height: auto;
-}
-
-.columnaTitulo{
-  text-align: left;
-}
-
-q {
-  font-style: italic;
-  quotes: none;
 }
 
 main {
