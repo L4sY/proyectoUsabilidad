@@ -5,7 +5,11 @@
 }
 
 :root{
+<<<<<<< HEAD
   --colorFondo: #8829A8;
+=======
+  --colorFondo: #8602B6;
+>>>>>>> 49f9763f40b301e38cf1774fba2137458cae8ae2
   --bordeFondo: #9426b9;
   --colorPie:#C87CDF;
   --fondoFocus: #ffb8fa;
@@ -37,20 +41,6 @@ header {
   align-items: flex-start;
   gap: 15px;
   border-bottom: var(--bordeFondo);
-}
-
-.logo{
-  width: 70px;
-  height: auto;
-}
-
-.columnaTitulo{
-  text-align: left;
-}
-
-q {
-  font-style: italic;
-  quotes: none;
 }
 
 .linkSalto{
@@ -87,6 +77,20 @@ section {
   padding: 40px;
 }
 
+.logo{
+  width: 70px;
+  height: auto;
+}
+
+.columnaTitulo{
+  text-align: left;
+}
+
+q {
+  font-style: italic;
+  quotes: none;
+}
+
 main {
   padding: 40px;
 }
@@ -104,7 +108,7 @@ th, td {
 }
 
 th {
-  background-color: #b554d5;
+  background-color: #8602B6;
   color: white;
 }
 /* === ADAPTACIÓN A MÓVILES === */
