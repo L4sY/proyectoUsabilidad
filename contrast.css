@@ -1,0 +1,47 @@
+:root {
+  --colorFondo: #000000;
+  --bordeFondo: #ffff00;    /* amarillo puro */
+  --colorPie: #000000;
+  --fondoFocus: #ff0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  border-bottom: 2px solid #ffff00;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  border-top: 2px solid #ffff00;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffff00;
+}
+
+th {
+  background-color: #000;
+  color: #ff0;
+  border: 2px solid #fff;
+}
+
+td {
+  border-color: #fff;
+}
+
+:focus {
+  outline: 3px solid #ff0;
+  background-color: #333;
+}

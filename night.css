@@ -1,13 +1,17 @@
-:root {
-  --colorFondo: #2b0040;     /* morado oscuro profundo */
-  --bordeFondo: #5a0d72;
-  --colorPie: #4a005f;
-  --fondoFocus: #b85cff;
-}
+/*@import url('style.css'); */
+
+
+    :root {
+    --colorFondo: #1a0033;     /* morado más oscuro */
+    --bordeFondo: #7a1fa2;
+    --colorPie: #260046;
+    --fondoFocus: #c77dff;
+    }
+
 
 body {
-  background-color: #121212;
-  color: #e8e6e3;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
 }
 
 header {
@@ -22,18 +26,17 @@ footer {
 }
 
 a {
-  color: #c47aff;
+  color: #9f7fff;
 }
 
 a:hover {
-  color: #ffb8fa;
+  color: #d9b3ff;
 }
 
 th {
-  background-color: #4a0072;
+  background-color: #3b0066;
   color: #fff;
 }
 
 table, td {
-  border-color: #555;
-}
+  border-color: #777}
