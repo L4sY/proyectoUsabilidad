@@ -1,6 +1,6 @@
 :root {
   --colorFondo: #000000;
-  --bordeFondo: #ffff00;    /* amarillo puro */
+  --bordeFondo: #ffff00;    
   --colorPie: #000000;
   --fondoFocus: #ff0;
 }
@@ -9,13 +9,13 @@ body {
   background-color: #000;
   color: #fff;
 }
-
+/* cabecera*/
 header {
   background-color: #000;
   color: #fff;
   border-bottom: 2px solid #ffff00;
 }
-
+/*pie*/
 footer {
   background-color: #000;
   color: #fff;
@@ -40,7 +40,7 @@ th {
 td {
   border-color: #fff;
 }
-
+/* amarillo para enfocar*/
 :focus {
   outline: 3px solid #ff0;
   background-color: #333;
