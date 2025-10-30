@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedSearch</title>
-    <link rel="stylesheet" href="/CSS/formularios.css">
-    <link rel="alternate stylesheet" href="/CSS/night.css" title="Modo noche">
-    <link rel="alternate stylesheet" href="/CSS/contrast.css" title="Alto contraste">
+    <link rel="stylesheet" href="/proyectoUsabilidad/formularios.css">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/night.css" title="Modo noche">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/contrast.css" title="Alto contraste">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/letraGrande.css" title="Letra grande">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/altaLegibilidad.css" title="Alta legibilidad">
 </head>
 <body>
 
@@ -34,7 +36,7 @@
         <legend>Datos de busqueda</legend>
                 <label for="descripcion">Descripcion<small>(<strong>Obligatorio</strong>)</small></label>
                 <input type = "text"  id = "descripcion" required>
-                <select name="condicion" id="condicion">
+                <select name="condicion" class="condicion">
                     <option value="Y">Y</option>
                     <option value="O">O</option>
                     <option value="Sin">Sin</option>
@@ -42,7 +44,7 @@
             
                 <label for="causas">Causas</label>
                 <input type = "text" id = "causas">
-                <select name="condicion" id="condicion">
+                <select name="condicion" class="condicion">
                     <option value="Y">Y</option>
                     <option value="O">O</option>
                     <option value="Sin">Sin</option>
@@ -59,7 +61,7 @@
                     <option value="MalestarGeneral">Malestar general</option>
                 </select>
 
-                <select name="condicion" id="condicion">
+                <select name="condicion" class="condicion">
                     <option value="Y">Y</option>
                     <option value="O">O</option>
                     <option value="Sin">Sin</option>
@@ -77,7 +79,7 @@
                     <option value="epirometria">Epirometría</option>
                 </select>
                 
-                <select name="condicion" id="condicion">
+                <select name="condicion" class="condicion">
                     <option value="Y">Y</option>
                     <option value="O">O</option>
                     <option value="Sin">Sin</option>

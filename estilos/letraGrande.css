@@ -1,0 +1,40 @@
+@import url("/proyectoUsabilidad/estilos/index.css");
+
+/* === MODO LETRA GRANDE === */
+
+html {
+  font-size: 20px !important;
+}
+
+body {
+  line-height: 1.8 !important;
+}
+
+h1 {
+  font-size: 2.4rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.7rem !important;
+}
+
+p, li, td, th, a, footer {
+  font-size: 1.25rem !important;
+}
+
+button, input, select, textarea {
+  font-size: 1.1rem !important;
+}
+
+header {
+  padding: 25px !important;
+}
+
+footer {
+  font-size: 1.1rem !important;
+}
+
