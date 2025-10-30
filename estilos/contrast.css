@@ -1,4 +1,7 @@
 @import url("/proyectoUsabilidad/estilos/index.css");
+@import url("/proyectoUsabilidad/estilos/formularios.css");
+@import url("/proyectoUsabilidad/estilos/articulos.css");
+@import url("/proyectoUsabilidad/estilos/mensajes.css");
 :root {
   --colorFondo: #000000;
   --bordeFondo: #ffff00;    
@@ -7,20 +10,20 @@
 }
 
 body {
-  background-color: #000;
+  background-color: var(--colorFondo);
   color: #fff;
 }
 /* cabecera*/
 header {
-  background-color: #000;
+  background-color: var(--colorFondo);
   color: #fff;
-  border-bottom: 2px solid #ffff00;
+  border-bottom: 2px solid var(--bordeFondo);
 }
 /*pie*/
 footer {
-  background-color: #000;
+  background-color: var(--colorFondo);
   color: #fff;
-  border-top: 2px solid #ffff00;
+  border-top: 2px solid var(--bordeFondo);
 }
 
 a {
@@ -29,12 +32,12 @@ a {
 }
 
 a:hover {
-  color: #ffff00;
+  color: var(--bordeFondo);
 }
 
 th {
   background-color: #000;
-  color: #ff0;
+  color: var(--fondoFocus);
   border: 2px solid #fff;
 }
 
@@ -43,6 +46,6 @@ td {
 }
 /* amarillo para enfocar*/
 :focus {
-  outline: 3px solid #ff0;
+  outline: 3px solid var(--fondoFocus);
   background-color: #333;
 }

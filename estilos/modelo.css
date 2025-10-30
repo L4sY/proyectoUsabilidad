@@ -74,7 +74,7 @@ q {
 }
 
 .skip-link{
-  color: #671F7F;
+  color: var(--colorLetras);
   padding: 0.4rem 0.8rem;
 }
 
