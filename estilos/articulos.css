@@ -1,6 +1,8 @@
 @import url("/proyectoUsabilidad/estilos/index.css");
 
-body p,a,ul{
+main p,
+main a,
+main ul{
     padding-left: 30px;
 }
 
