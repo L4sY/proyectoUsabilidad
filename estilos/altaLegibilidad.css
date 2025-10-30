@@ -1,0 +1,50 @@
+@import url("/proyectoUsabilidad/estilos/index.css");
+/* === MODO ALTA LEGIBILIDAD === */
+
+:root {
+  --colorFondo: #000000;
+  --bordeFondo: #ffffff;
+  --colorPie: #222222;
+  --fondoFocus: #ffff00;
+}
+
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: Verdana, Arial, sans-serif !important;
+  line-height: 1.9 !important;
+  letter-spacing: 0.5px;
+}
+
+header {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-bottom: 3px solid #ffffff !important;
+}
+
+a, .skip-link {
+  color: #0000ee !important;
+  text-decoration: underline !important;
+}
+
+a:hover, a:focus {
+  color: #aa0000 !important;
+  background-color: #ffff00 !important;
+}
+
+:focus {
+  outline: 3px solid #000000 !important;
+  background-color: var(--fondoFocus) !important;
+  text-decoration: underline !important;
+}
+
+th {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+footer {
+  background-color: #f2f2f2 !important;
+  color: #000 !important;
+  border-top: 3px solid #000 !important;
+}

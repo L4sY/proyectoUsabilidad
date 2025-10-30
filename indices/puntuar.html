@@ -5,7 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedSearch</title>
     <link rel="stylesheet" href="/proyectoUsabilidad/formularios.css">
-    
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/night.css" title="Modo noche">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/contrast.css" title="Alto contraste">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/letraGrande.css" title="Letra grande">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/altaLegibilidad.css" title="Alta legibilidad">
+    <script>
+        const fechaInput = document.getElementById("nac");
+        const hoy = new Date().toISOString().split("T")[0];
+        fechaInput.setAttribute("max", hoy);
+
+        const formulario = document.getElementById("puntuarForm");
+        const progressBar = document.getElementById("progressBar");
+
+        formulario.addEventListener("input", actualizarProgreso);
+
+        function actualizarProgreso() {
+            const campos = formulario.querySelectorAll("[required]");
+            let completados = 0;
+
+            campos.forEach(campo => {
+                if (campo.type === "checkbox" || campo.type === "radio") {
+                    if (campo.checked) completados++;
+                } else if (campo.value.trim() !== "") {
+                    completados++;
+                }
+            });
+
+            const progreso = Math.round((completados / campos.length) * 100);
+            progressBar.style.width = progreso + "%";
+            progressBar.textContent = progreso + "%";
+        }
+
+        const slider = document.getElementById("punt");
+        const output = document.getElementById("valorPuntuacion");
+
+        output.textContent = slider.value;
+
+        slider.addEventListener("input", () => {
+            output.textContent = slider.value;
+        });
+
+        // Cambio de color
+        const botonColor = document.getElementById("cambiarColor");
+        const colorInput = document.getElementById("colorInput");
+
+        botonColor.addEventListener("click", () => {
+            const color = colorInput.value;
+            progressBar.style.backgroundColor = color;
+            slider.style.accentColor = color; // cambia el color del range (soporte moderno)
+        });
+    </script>
 </head>
 <body>
 
@@ -78,50 +127,4 @@
         </div>        
     </footer>
 </body>
-<script>
-        const fechaInput = document.getElementById("nac");
-        const hoy = new Date().toISOString().split("T")[0];
-        fechaInput.setAttribute("max", hoy);
-
-        const formulario = document.getElementById("puntuarForm");
-        const progressBar = document.getElementById("progressBar");
-
-        formulario.addEventListener("input", actualizarProgreso);
-
-        function actualizarProgreso() {
-            const campos = formulario.querySelectorAll("[required]");
-            let completados = 0;
-
-            campos.forEach(campo => {
-                if (campo.type === "checkbox" || campo.type === "radio") {
-                    if (campo.checked) completados++;
-                } else if (campo.value.trim() !== "") {
-                    completados++;
-                }
-            });
-
-            const progreso = Math.round((completados / campos.length) * 100);
-            progressBar.style.width = progreso + "%";
-            progressBar.textContent = progreso + "%";
-        }
-
-        const slider = document.getElementById("punt");
-        const output = document.getElementById("valorPuntuacion");
-
-        output.textContent = slider.value;
-
-        slider.addEventListener("input", () => {
-            output.textContent = slider.value;
-        });
-
-        // Cambio de color
-        const botonColor = document.getElementById("cambiarColor");
-        const colorInput = document.getElementById("colorInput");
-
-        botonColor.addEventListener("click", () => {
-            const color = colorInput.value;
-            progressBar.style.backgroundColor = color;
-            slider.style.accentColor = color; // cambia el color del range (soporte moderno)
-        });
-    </script>
 </html>
