@@ -3,10 +3,10 @@
 @import url("/proyectoUsabilidad/estilos/articulos.css");
 @import url("/proyectoUsabilidad/estilos/mensajes.css");
 :root {
-  --colorFondo: #ff0;
-  --bordeFondo: #000;    
-  --colorPie: #ff0;
-  --fondoFocus: #000;
+  --colorFondo: #000;
+  --bordeFondo: #ff0;    
+  --colorPie: #000;
+  --fondoFocus: #ff0;
 }
 
 body {
@@ -25,15 +25,13 @@ footer {
   color: #000;
   border-top: 2px solid var(--bordeFondo);
 }
-
-
 a {
-  color: #00ffff;
+  color: #f00;
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--bordeFondo);
+  color: #f00 !important;
 }
 
 th {
@@ -48,6 +46,6 @@ td {
 }
 /* amarillo para enfocar*/
 :focus {
-  outline: 3px solid var(--fondoFocus);
+  outline: 3px solid var(--colorFondo);
   background-color: #333;
 }
