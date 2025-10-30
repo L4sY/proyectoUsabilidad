@@ -16,3 +16,36 @@ img{
   height: auto;
 }
 
+/* === ESTILOS PARA IMPRESIÓN === */
+@media print {
+
+  .migasPan {
+    display: none !important;
+  }
+
+
+  main button {
+    display: none !important;
+  }
+
+
+  footer {
+    display: none !important;
+  }
+
+  nav {
+    display: none !important;
+  };
+
+  video {
+    display: none !important;
+  }
+
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+}

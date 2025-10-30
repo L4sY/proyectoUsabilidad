@@ -38,6 +38,32 @@ main{
 section {
   padding: 40px;
 }
+/* Contenedor del buscador */
+main nav {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr); /* 13 letras por fila */
+  gap: 10px; /* espacio entre letras */
+  margin-top: 20px;
+}
+
+
+main nav a {
+  padding: 10px 12px;
+  background-color: var(--colorFondo);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+main nav a:hover,
+main nav a:focus {
+  background-color: var(--bordeFondo);
+}
+
+
 
 header {
   background-color: var(--colorFondo);
