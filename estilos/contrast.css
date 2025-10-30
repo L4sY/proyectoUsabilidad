@@ -3,10 +3,10 @@
 @import url("/proyectoUsabilidad/estilos/articulos.css");
 @import url("/proyectoUsabilidad/estilos/mensajes.css");
 :root {
-  --colorFondo: #000000;
-  --bordeFondo: #ffff00;    
-  --colorPie: #000000;
-  --fondoFocus: #ff0;
+  --colorFondo: #ff0;
+  --bordeFondo: #000;    
+  --colorPie: #ff0;
+  --fondoFocus: #000;
 }
 
 body {
@@ -25,6 +25,7 @@ footer {
   color: #fff;
   border-top: 2px solid var(--bordeFondo);
 }
+
 
 a {
   color: #00ffff;
