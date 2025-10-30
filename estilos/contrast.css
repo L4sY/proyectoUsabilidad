@@ -11,18 +11,18 @@
 
 body {
   background-color: var(--colorFondo);
-  color: #fff;
+  color: #000;
 }
 /* cabecera*/
 header {
   background-color: var(--colorFondo);
-  color: #fff;
+  color: #000;
   border-bottom: 2px solid var(--bordeFondo);
 }
 /*pie*/
 footer {
   background-color: var(--colorFondo);
-  color: #fff;
+  color: #000;
   border-top: 2px solid var(--bordeFondo);
 }
 
@@ -38,8 +38,9 @@ a:hover {
 
 th {
   background-color: #000;
-  color: var(--fondoFocus);
+  color: #fff;
   border: 2px solid #fff;
+  
 }
 
 td {
