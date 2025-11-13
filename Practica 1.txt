@@ -1,5 +1,0 @@
--Hacer índice con las letras y temas destacados.
--Pagina de 2 letras las demás error.
--Poner enlace a 4 artículos en total entre las 2 letras.
-Numero mínimo de paginas web 7.
-Investigar GitHub para poder compartirlo todo mas fácil.
