@@ -65,7 +65,18 @@ section {
   background-color: var(--bordeFondo);
 }
 
+.video{
+  position: relative;
+  width: 30rem;
+  height: 25rem;
+}
 
+#videos{
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 2rem;
+}
 
 header {
   background-color: var(--colorFondo);
