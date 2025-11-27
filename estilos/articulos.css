@@ -1,12 +1,5 @@
 @import url("/proyectoUsabilidad/estilos/index.css");
 
-main p,
-main a,
-main ul{
-    padding-left: 30px;
-}
-
-
 h4{
     text-decoration: underline;
 }

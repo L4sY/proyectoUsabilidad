@@ -37,6 +37,12 @@ main{
   padding: 40px;
 }
 
+main p,
+main a,
+main ul{
+    padding-left: 30px;
+}
+
 section {
   padding: 40px;
 }

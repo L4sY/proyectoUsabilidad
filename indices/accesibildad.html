@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/proyectoUsabilidad/imagenes/logo.png">
+    <link rel="stylesheet" href="/proyectoUsabilidad/estilos/index.css">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/night.css" title="Modo noche">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/contrast.css" title="Alto contraste">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/letraGrande.css" title="Letra grande">
+    <link rel="alternate stylesheet" href="/proyectoUsabilidad/estilos/altaLegibilidad.css" title="Alta legibilidad">
+    <title>MedSearch - Accesibilidad</title>
+</head>
+    <nav class="linkSalto" aria-label="Enlaces de salto">
+        <a href="#main" class="skip-link">Saltar al contenido</a>
+        <a href="#contacto" class="skip-link">Saltar a contacto</a>
+    </nav>
+    <body>
+    <header>
+        <figure>
+            <img src="/proyectoUsabilidad/imagenes/logo.png" alt="Logo de Medsearch" class="logo">
+        </figure>
+        <div class="columnaTitulo"> 
+            <h1>MedSearch</h1>
+            <q>El arte de curar a su alcance</q><br>  
+        </div>
+    </header>
+
+    <nav aria-label="Migas de pan">
+        <ol class="migasPan">
+            <li><a href="/proyectoUsabilidad/index.html">Inicio</a></li>
+            <li aria-current="page">Accesibilidad</li>
+        </ol>
+    </nav>
+
+  
+  <main>
+    <h2>Compromiso de accesibilidad</h2>
+        <p>El titular de este sitio web se compromete a hacer accesible su sitio conforme con la <strong>norma UNE-EN 301 549:2021 (versión 3.2.1, marzo 2021)</strong> y las <strong>Pautas WCAG 2.1 en nivel AA</strong>.</p>
+        
+        <h3 id="tablaPrincipal">Tabla de contenidos</h3>
+                <ul>
+                    <li><a href="#conformidad">Situacion de conformidad</a></li>
+                    <li><a href="#noAcc">Contenido no Accesible</a></li>
+                    <li><a href="#preparacion">Preparacion de esta declaracion</a></li>
+                    <li><a href="#observacionesContacto">Observaciones y datos de contacto</a></li>
+                    <li><a href="#procedimiento">Procedimiento de reclamacion</a></li>
+                    <li><a href="#caracteristicas">Características de accesibilidad aplicadas</a></li>
+                    <li><a href="#plan">Plan de mejora</a></li>
+                    <li><a href="#observaciones">Observaciones finales</a></li>
+                </ul>
+
+    <h4 id="conformidad">Situación de conformidad</h4>
+    <p>Este sitio web se encuentra <strong>parcialmente conforme</strong> con la norma UNE-EN 301 549:2021 debido a algunas excepciones y mejoras pendientes, indicadas más abajo.</p>
+
+    <h4 id="noAcc">Contenido no accesible</h4>
+    <p>A continuación se listan las áreas que actualmente requieren atención o mejora:</p>
+    <ul>
+      <li><strong>Estructura semántica:</strong> en algunas páginas se puede mejorar la colocación de landmarks y encabezados para mayor claridad.</li>
+      <li><strong>Documentos externos:</strong> Videos u otros recursos alojados externamente pueden no cumplir la norma y se proporcionan bajo responsabilidad de su autor.</li>
+    </ul>
+
+    <h4 id="preparacion">Preparación de esta declaración</h4>
+    <p>Fecha de preparación / última revisión: <strong>27 de noviembre de 2025</strong>.</p>
+    <p>La declaración se ha preparado mediante una autoevaluación del desarrollador, empleando:</p>
+    <ul>
+      <li>Inspección manual del HTML y la estructura semántica.</li>
+      <li>Herramientas de validación automática (p. ej. Lighthouse y herramientas públicas de accesibilidad).</li>
+      <li>Comprobación de criterios clave de WCAG 2.1 (niveles A y AA).</li>
+    </ul>
+
+    <h4 id="observacionesContacto">Observaciones y datos de contacto</h4>
+    <p>Si detectas barreras de accesibilidad o necesitas información en otro formato, por favor contacta en:</p>
+    <p>Nuestro<a href="/proyectoUsabilidad/indices/contacto.html" style="padding-left: 0.5%;">formulario de contacto</a></p>
+    <p>Indica en tu mensaje la URL afectada, el problema encontrado y el formato en el que deseas recibir la información (por ejemplo: DOCX, PDF accesible, texto plano).</p>
+
+    <h4 id="procedimiento">Procedimiento de reclamación</h4>
+    <p>En caso de que una solicitud de accesibilidad no sea atendida, la persona usuaria puede presentar una reclamación conforme a la normativa aplicable. En este proyecto académico se dispone de mecanismos internos de revisión y mejora.</p>
+
+    <h4 id="caracteristicas">Características de accesibilidad aplicadas</h4>
+    <p>El sitio incorpora, entre otras, las siguientes medidas orientadas a WCAG:</p>
+    <table>
+        <caption>Características</caption>
+      <thead>
+        <tr>
+          <th scope="col">Medida</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Criterio WCAG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Skip links</td>
+          <td>Enlaces de salto al contenido y navegación, visibles al recibir foco.</td>
+          <td>2.4.1 Bypass Blocks (A)</td>
+        </tr>
+        <tr>
+          <td>Landmarks y estructura</td>
+          <td>Uso de etiquetas semánticas: &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;.</td>
+          <td>1.3.1 Información y relaciones (A)</td>
+        </tr>
+        <tr>
+          <td>Texto alternativo en imágenes</td>
+          <td>Atributo <code>alt</code> en imágenes informativas.</td>
+          <td>1.1.1 Contenido no textual (A)</td>
+        </tr>
+        <tr>
+          <td>Foco visible</td>
+          <td>Estilos visibles al recibir foco en enlaces y controles.</td>
+          <td>2.4.7 Focus Visible (AA)</td>
+        </tr>
+        <tr>
+          <td>Contraste</td>
+          <td>Colores generales con contraste suficiente (objetivo AA); revisar textos secundarios.</td>
+          <td>1.4.3 Contraste (AA)</td>
+        </tr>
+        <tr>
+          <td>Encabezados jerárquicos</td>
+          <td>Uso coherente de <code>h1</code>, <code>h4</code>, <code>h4</code> para organizar contenido.</td>
+          <td>1.3.1 Información y relaciones (A)</td>
+        </tr>
+        <tr>
+          <td>Tablas estructuradas</td>
+          <td>Tablas con &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt; y <code>scope</code> donde aplica.</td>
+          <td>1.3.1 / 4.1.2 (A)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 id="plan">Plan de mejora</h4>
+    <ol>
+      <li>Incluir subtítulos en todos los vídeos con prioridad.</li>
+      <li>Revisar el orden de tabulación y mejorar el foco en componentes interactivos.</li>
+      <li>Ajustar contraste en textos secundarios y elementos decorativos.</li>
+      <li>Auditoría periódica con herramientas automáticas y pruebas con usuarios.</li>
+    </ol>
+
+    <h4 id="observaciones">Observaciones finales</h4>
+        <p>Este documento es público y estará disponible en el sitio web. Se actualizará periódicamente conforme se implementen las mejoras y se realicen nuevas revisiones.</p>
+    </main>
+    </body>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© Marcos Muñoz Gamez | Paula Garay Jimenez</p>
+            <p>Curso 2025-2026</p>
+            <p>Ingenieria Biomedica</p>
+        </div>
+        <div class="footer-top">
+            <a href="/proyectoUsabilidad/indices/contacto.html">Contacto</a>
+            <a href="/proyectoUsabilidad/indices/puntuar.html">Puntua un articulo</a>
+            <a href="/proyectoUsabilidad/indices/mapaSitio.html">Mapa del sitio</a>
+        </div>        
+    </footer>
+</body>
