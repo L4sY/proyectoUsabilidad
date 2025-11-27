@@ -39,8 +39,13 @@ main{
 
 main p,
 main a,
-main ul{
+main ul,
+main ol{
     padding-left: 30px;
+}
+
+h4{
+  padding-top: 3%;
 }
 
 section {
